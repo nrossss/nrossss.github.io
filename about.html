@@ -1,35 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
-        <title>{% block title %}<!-- Placeholder for Title -->{% endblock %} - Jinja Demo</title>
-        {% block head %}
-        <!-- Placeholder for Other Imports -->
-        {% endblock %}
-    </head>
-    <body>
-        <div id="content">
-            {% block content %}
-            <!-- Placeholder for Page Content -->
-            {% endblock %}
-        </div>
-    <!-- Footer -->
-        <!--
-    <footer class="footer">
-        <p>© 2024 Mi Sitio Web | <a href="#">Política de Privacidad</a></p>
-    </footer>
-        -->
-        <div class="footer-spacer"></div>
-        <footer class="sticky-footer">
-            <p>&copy; 2024 Paws Rescue Center</p>
-            <div class="social-links">
-                <a href="https://facebook.com" target="_blank">Facebook</a> |
-                <a href="https://twitter.com" target="_blank">Twitter</a> |
-                <a href="https://instagram.com" target="_blank">Instagram</a> |
-                <a href="{{ url_for('about') }}">About Us</a>
-            </div>
-        </footer>
-    </body>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App on Azure</title>
+</head>
+<body>
+    <h1>Hello, Azure!</h1>
+    <p>This is a simple Flask app hosted on Azure.</p>
+</body>
 </html>
 
