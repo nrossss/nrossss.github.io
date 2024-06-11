@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Inicio - Centro de Rescate Paws
+{% endblock %}
+
+{% block content %}
+    <h1 class="title">Paws Rescue Center🐾</h1>
+    <h2>Bienvenido a la página oficial de Paws Rescue Center</h2>
+    <p>Si te gustan los animales, has venido al lugar correcto.<br>
+        Tenemos muchas mascotas que necesitan un hogar.<br>
+        Abre tu corazón y tu hogar para adoptar uno de nuestros amigos peludos.</p>
+    <table>
+        <tr>
+            <td>Imagen</td>
+            <td>Nombre</td>
+            <td>Edad</td>
+            <td>Biografía</td>
+        </tr>
+        {% for pet in Pets %}
+            <tr>
+                <td>
+                    <a href="{{ url_for('pet_details', pet_id=pet['id']) }}">
+                        <img src="{{ url_for('static', filename='p' + pet['id']|string + '.jpg') }}" height="100" alt="Imagen de {{ pet['name'] }}">
+                    </a>
+                </td>
+                <td style="text-align: left">{{ pet['name'] }}</td>
+                <td style="text-align: left">{{ pet['age'] }}</td>
+                <td style="text-align: left">{{ pet['bio'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <!-- Agregar imagen de ejemplo para pruebas
+    <img src="paws_app\images\doberman.jpg" height="100" alt="Doberman Enano"> -->
+{% endblock %}
+
+
+
+
+

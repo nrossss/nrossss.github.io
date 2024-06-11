@@ -1,0 +1,51 @@
+#title {
+    padding: 10px;
+    color: #cfdac8;
+}
+body {
+    background: #cfdac8;
+}
+
+/* Estilos para el footer */
+
+.footer-spacer {
+    height: 4em; /* Ajusta la altura según la altura del footer */
+}
+
+footer.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #D8E5CF ;
+    color: #581845;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer.sticky-footer p {
+    margin: 0;
+}
+
+footer.sticky-footer .social-links {
+    margin-top: 0.5em;
+}
+
+footer.sticky-footer .social-links a {
+    color: #581845;
+    margin: 0 0.5em;
+    text-decoration: none;
+}
+
+footer.sticky-footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #dbbdbd;
+}

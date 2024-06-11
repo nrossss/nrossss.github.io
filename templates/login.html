@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Iniciar Sesion - Centro de Rescate Paws
+{% endblock %}
+
+
+{% block content %}
+    {% if message %}
+        {{ message }}
+    {% endif %}
+    <h1>Login</h1>
+    <form method="POST">
+      Email:<br>
+      <input type="text" name="email" >
+      <br>
+      Password:<br>
+      <input type="password" name="password" >
+      <br><br>
+      <input type="submit" value="Login">
+    </form>
+{% endblock %}
